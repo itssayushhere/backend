@@ -1,0 +1,29 @@
+# Node
+node_modules/
+
+# Env files
+.env
+.env.*
+
+# Prisma
+prisma/generated/
+generated/prisma/
+prisma/migrations/migration_lock.toml
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+*.swp
