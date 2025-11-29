@@ -22,7 +22,7 @@ logs/
 .DS_Store
 Thumbs.db
 .vscode/
-.idea/
+.idea/w
 
 # Temp files
 *.tmp
