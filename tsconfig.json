@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* ===== File Structure ===== */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* ===== Module & Environment ===== */
+    "module": "nodenext",
+    "target": "es2020",
+    "moduleResolution": "nodenext",
+    "lib": ["es2020"],
+    "types": ["node"],
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+
+    /* ===== Emit Options ===== */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* ===== Strict Type Safety ===== */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* ===== Module Behavior ===== */
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    /* ===== Optimization ===== */
+    "skipLibCheck": true
+  },
+
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

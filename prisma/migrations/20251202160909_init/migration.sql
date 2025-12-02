@@ -1,7 +1,4 @@
 -- CreateEnum
-CREATE TYPE "IsLive" AS ENUM ('YES', 'NO');
-
--- CreateEnum
 CREATE TYPE "Gender" AS ENUM ('MALE', 'FEMALE');
 
 -- CreateTable
@@ -14,7 +11,6 @@ CREATE TABLE "User" (
     "profilePhoto" TEXT,
     "bio" TEXT,
     "DOB" TEXT,
-    "isLive" "IsLive" NOT NULL DEFAULT 'NO',
     "gender" "Gender",
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
