@@ -7,11 +7,6 @@ datasource db {
   provider = "postgresql"
 }
 
-enum Gender {
-  MALE
-  FEMALE
-}
-
 model User {
   id           String   @id @default(uuid())
   email        String   @unique
@@ -21,7 +16,12 @@ model User {
   profilePhoto String?
   bio          String?
   DOB          String?
-  gender       Gender?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  gender       gender?
+}
+
+enum gender {
+  MALE
+  FEMALE
 }

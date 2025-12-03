@@ -1,5 +1,5 @@
 -- CreateEnum
-CREATE TYPE "Gender" AS ENUM ('MALE', 'FEMALE');
+CREATE TYPE "gender" AS ENUM ('MALE', 'FEMALE');
 
 -- CreateTable
 CREATE TABLE "User" (
@@ -11,9 +11,9 @@ CREATE TABLE "User" (
     "profilePhoto" TEXT,
     "bio" TEXT,
     "DOB" TEXT,
-    "gender" "Gender",
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
+    "gender" "gender",
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
 );
